@@ -12,7 +12,7 @@ var (
 )
 
 func Db() *mongo.Client {
-	client, err := mongo.Connect(Ctx, options.Client().ApplyURI("mongodb+srv://admin:admin123@todoapp.f3sbu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"))
+	client, err := mongo.Connect(Ctx, options.Client().ApplyURI(""))
 	if err != nil {
 		panic(err)
 	}
